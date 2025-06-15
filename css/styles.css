@@ -1,0 +1,60 @@
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  background-color: #ffffff;
+  color: #2e2f42;
+}
+
+.header-navigation-logo,
+.footer-logo {
+  font-size: 18px;
+  font-weight: 700;
+}
+.logo-text-web {
+  color: #4d5ae5;
+}
+.footer-logo {
+  color: #f4f4fd;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-address {
+  color: #434455;
+}
+
+.hero-banner {
+  width: 1440px;
+  height: 600px;
+  background-color: #2e2f42;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+}
+
+.hero-banner-button {
+  background-color: #4d5ae5;
+  color: #ffffff;
+  border-radius: 4px;
+  width: 169px;
+  height: 56px;
+}
+
+.our-team {
+  background-color: #f4f4fd;
+}
+
+.footer {
+  background-color: #2e2f42;
+  color: #f4f4fd;
+  width: 1440px;
+  height: 312px;
+}
