@@ -25,6 +25,9 @@ body {
 .navigation-link:focus {
   color: #404bbf;
 }
+.logo-text-web {
+  color: #2e2f42;
+}
 .footer-text-web {
   color: #f4f4fd;
 }
@@ -38,27 +41,46 @@ a {
 }
 
 .header-address {
+  font-style: normal;
+}
+.header-address-mailto,
+.header-address-tel {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: #434455;
+}
+.header-address-mailto:hover,
+.header-address-tel:hover,
+.header-address-mailto:focus,
+.header-address-tel:focus {
+  color: #404bbf;
 }
 
 .hero-banner {
-  width: 1440px;
-  height: 600px;
   background-color: #2e2f42;
-  color: #ffffff;
-  text-align: center;
-  font-weight: 700;
+}
+.hero-banner-text {
   font-size: 56px;
-  line-height: 60px;
+  line-height: 1.07;
+  text-align: center;
   letter-spacing: 0.02em;
+  color: #ffffff;
 }
 
 .hero-banner-button {
   background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: #ffffff;
-  border-radius: 4px;
-  width: 169px;
-  height: 56px;
+  cursor: pointer;
+}
+.hero-banner-button:hover,
+.hero-banner-button:focus {
+  background-color: #404bbf;
 }
 
 .our-team {
