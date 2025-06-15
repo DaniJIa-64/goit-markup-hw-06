@@ -4,6 +4,14 @@ body {
   color: #434455;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .header-navigation-logo,
 .footer-logo {
   font-size: 18px;
@@ -25,38 +33,25 @@ body {
 .navigation-link:focus {
   color: #404bbf;
 }
-.logo-text-web {
+.header-navigation-next {
   color: #2e2f42;
 }
 .footer-text-web {
   color: #f4f4fd;
 }
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 .header-address {
   font-style: normal;
 }
-.header-address-mailto,
-.header-address-tel {
+.header-address-contacts {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
-.header-address-mailto:hover,
-.header-address-tel:hover,
-.header-address-mailto:focus,
-.header-address-tel:focus {
+.header-address-contacts:hover,
+.header-address-contacts:focus {
   color: #404bbf;
 }
-
 .hero-banner {
   background-color: #2e2f42;
 }
@@ -67,7 +62,6 @@ a {
   letter-spacing: 0.02em;
   color: #ffffff;
 }
-
 .hero-banner-button {
   background-color: #4d5ae5;
   font-family: "Roboto", sans-serif;
@@ -81,6 +75,20 @@ a {
 .hero-banner-button:hover,
 .hero-banner-button:focus {
   background-color: #404bbf;
+}
+
+.benefits-variations {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.benefits-variations-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 .our-team {
