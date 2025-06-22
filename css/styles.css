@@ -164,8 +164,9 @@ p {
   border-radius: 4px;
   border: none;
   padding: 16px 32px;
-  display: block;
   min-width: 169px;
+  display: block;
+  margin: auto;
 }
 
 .hero-banner-button:hover,
@@ -174,6 +175,17 @@ p {
 }
 
 /* benefits */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 
 .benefits-list {
   display: flex;
@@ -227,7 +239,40 @@ p {
 }
 
 .team-member-info {
-  padding: 32px 0px;
+  padding: 32px 0;
+}
+
+.team-member {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.team-member-text {
+  text-align: center;
+}
+
+/* portfolio */
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-item {
+  width: calc((100% - 48px) / 3);
+  margin-bottom: 8px;
+}
+
+.portfolio-item-info {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.portfolio-item-page {
+  margin-bottom: 8px;
 }
 
 .portfolio-item-text {
@@ -236,10 +281,19 @@ p {
   letter-spacing: 0.02em;
 }
 
+/* footer */
+
 .footer {
   background-color: #2e2f42;
   color: #f4f4fd;
+  padding: 100px 0;
 }
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .footer-text {
   line-height: 1.5;
   color: #f4f4fd;
