@@ -34,6 +34,10 @@ p {
   margin: 0 auto;
 }
 
+.section {
+  padding: 120px 0;
+}
+
 /* header */
 
 .header {
@@ -125,16 +129,22 @@ p {
   color: #404bbf;
 }
 
+/* hero-banner */
+
 .hero-banner {
   background-color: #2e2f42;
+  display: flex;
+  align-items: center;
 }
 
 .hero-banner-text {
+  max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  padding-bottom: 48px;
 }
 
 .hero-banner-button {
@@ -146,11 +156,22 @@ p {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  padding: 16px 32px;
 }
 
 .hero-banner-button:hover,
 .hero-banner-button:focus {
   background-color: #404bbf;
+}
+
+/* benefits */
+
+.benefits-list {
+  display: flex;
+  align-items: center;
+  width: calc((100% - 72px) / 4);
 }
 
 .benefits-variations,
