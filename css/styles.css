@@ -187,7 +187,8 @@ p {
   border: 0;
 }
 
-.benefits-list {
+.benefits-list,
+.team-members-list {
   display: flex;
   gap: 24px;
 }
@@ -214,11 +215,6 @@ p {
 
 .our-team {
   background-color: #f4f4fd;
-}
-
-.team-members-list {
-  display: flex;
-  gap: 24px;
 }
 
 .our-team-members,
@@ -298,4 +294,5 @@ p {
   line-height: 1.5;
   color: #f4f4fd;
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
