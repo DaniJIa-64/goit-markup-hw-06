@@ -41,6 +41,8 @@ p {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.08), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -67,6 +69,20 @@ p {
 .header-navigation-logo {
   padding: 24px 0;
   margin-right: 76px;
+  position: relative;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-navigation-logo::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 
 .navigation-list {
@@ -232,7 +248,7 @@ p {
   box-shadow: 0px 1px 4px #2e2f42, 0px 1px 1px #2e2f42, 0px 2px 1px #020202;
   cursor: pointer;
   transform: translateY(0);
-  transition: transform 250ms ease-in-out;
+  transition: transform 450ms ease-in-out;
   background-color: #4d5ae5;
 }
 
