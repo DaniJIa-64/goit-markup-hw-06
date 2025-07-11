@@ -42,7 +42,6 @@ p {
 /* Header Styles */
 
 .header {
-  border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.08), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -57,8 +56,9 @@ p {
   align-items: center;
 }
 
-.header-navigation-logo,
-.footer-logo {
+.header-navigation-logo {
+  padding: 24px 0;
+  margin-right: 76px;
   font-size: 18px;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
@@ -66,25 +66,6 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-}
-
-.header-navigation-logo {
-  padding: 24px 0;
-  margin-right: 76px;
-  position: relative;
-  color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-navigation-logo::after {
-  content: "";
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
-  background-color: #404bbf;
-  border-radius: 2px;
 }
 
 .navigation-list {
@@ -101,11 +82,24 @@ p {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-link:hover,
 .navigation-link:focus {
   color: #404bbf;
+}
+
+.navigation-link::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 
 .header-navigation-link {
@@ -127,11 +121,6 @@ p {
   gap: 40px;
 }
 
-.contacts-link {
-  padding: 24px 0;
-  display: block;
-}
-
 .header-address-contacts,
 .benefits-variations-text,
 .team-member-text {
@@ -141,8 +130,14 @@ p {
   color: #434455;
 }
 
-.header-address-contacts:hover,
-.header-address-contacts:focus {
+.contacts-link {
+  padding: 24px 0;
+  display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
   color: #404bbf;
 }
 
@@ -229,7 +224,9 @@ p {
 
 .benefits-icon-container {
   display: flex;
+  align-items: center;
   justify-content: center;
+  height: 112px;
   padding: 24px 100px;
   background-color: #f4f4fd;
   border: 1px solid #8e8f99;
@@ -266,7 +263,8 @@ p {
 }
 
 .portfolio-item:hover .overlay-portfolio {
-  box-shadow: 0px 1px 4px #2e2f42, 0px 1px 1px #2e2f42, 0px 2px 1px #020202;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   cursor: pointer;
   transform: translateY(0);
   transition: transform 450ms ease-in-out;
@@ -391,6 +389,13 @@ p {
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
 }
 
 .footer-text {
