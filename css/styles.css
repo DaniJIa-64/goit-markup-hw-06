@@ -65,6 +65,8 @@ address {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -79,9 +81,14 @@ address {
 section {
   padding: 96px 0;
 }
+@media (min-width: 768px) {
+  section {
+    padding: 96px 108px;
+  }
+}
 @media (min-width: 1158px) {
   section {
-    padding: 120px 0;
+    padding: 120px 141px;
   }
 }
 
@@ -743,7 +750,6 @@ section {
 .footer-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 72px;
 }
 
@@ -779,6 +785,8 @@ section {
 .footer-container-social {
   width: 208px;
   height: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-social-media {
@@ -881,6 +889,8 @@ section {
   .footer {
     padding-top: 108px;
     padding-bottom: 108px;
+    padding-left: 108px;
+    padding-right: 108px;
   }
   .footer-container {
     gap: 72px 24px;
@@ -888,6 +898,10 @@ section {
 
   .footer-container-logo {
     width: 264px;
+  }
+
+  .footer-container-social {
+    margin-left: 0px;
   }
 
   .footer-social-media {
@@ -916,6 +930,8 @@ section {
   .footer {
     padding-top: 96px;
     padding-bottom: 96px;
+    padding-left: 141px;
+    padding-right: 141px;
   }
   .footer-container {
     flex-wrap: nowrap;
